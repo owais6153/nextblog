@@ -3,6 +3,8 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Icons } from "@/components/Icons";
 import MediaHandles from "@/components/MediaHandles";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { v4 as uuidv4 } from 'uuid';
+import { navigationRoutes } from "@/constants/navigation-routes";
 
 export default function Home() {
   return (
@@ -31,7 +33,23 @@ export default function Home() {
       {/* Header close */}
 
       {/* Nav Bar start */}
-      <nav className="w-full bg-slate-400 h-[44px]"></nav>
+      <nav className="w-full bg-slate-400 h-[44px]">
+      <MaxWidthWrapper className={'flex items-center justify-between flex-1 h-full'}>
+        <div>
+         <Icons.bar />
+        </div>
+        <div className="flex space-x-[10px] items-center">
+          {navigationRoutes.map((nav) => {
+            return (
+              <span className="text-[14px]" key={uuidv4()}>
+                {nav?.title}
+              </span>
+            )
+          })}
+        </div>
+        <div><Icons.search /></div>
+        </MaxWidthWrapper>
+      </nav>
       {/* Nav Bar close */}
 
       {/* Google Add space start */}

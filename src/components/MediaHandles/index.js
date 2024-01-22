@@ -1,4 +1,6 @@
 import { cn } from "@/lib/utils";
+import {} from "lucide-react";
+import { Icons } from "../Icons";
 
 const MediaHandles = () => {
   const styleSocialIcon = (bgClass) => {
@@ -11,14 +13,22 @@ const MediaHandles = () => {
 
   return (
     <div className="flex items-center gap-[10px]">
-      <div className={styleSocialIcon("hover:bg-[#3b5997]")}></div>
-      <div className={styleSocialIcon(" hover:bg-[#00aced]")}></div>
+      <div className={styleSocialIcon("hover:bg-[#3b5997]")}>
+        <Icons.facebook />
+      </div>
+      <div className={styleSocialIcon(" hover:bg-[#00aced]")}>
+        <Icons.twitter />
+      </div>
       <div
         className={styleSocialIcon(
           "hover:bg-[url(https://thescarletfaithful.com/wp-content/themes/zox-news/images/insta-bg.gif)]"
         )}
-      ></div>
-      <div className={styleSocialIcon(" hover:bg-[#f00]")}></div>
+      >
+        <Icons.instagram />
+      </div>
+      <div className={styleSocialIcon(" hover:bg-[#f00]")}>
+        <Icons.youtube />
+      </div>
     </div>
   );
 };
