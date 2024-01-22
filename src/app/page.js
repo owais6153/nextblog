@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Icons } from "@/components/Icons";
+import MediaHandles from "@/components/MediaHandles";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 export default function Home() {
   return (
@@ -15,7 +18,16 @@ export default function Home() {
       </div>
 
       {/* Header Start */}
-      <header className="w-full h-[180px] bg-black"></header>
+      <header className="w-full h-[180px] bg-black flex items-center ">
+        <MaxWidthWrapper className={'flex items-center flex-1'}>
+          <div className="">
+            <MediaHandles />
+          </div>
+          <div className="mx-auto">
+            <Icons.mainLogo />
+          </div>
+        </MaxWidthWrapper>
+      </header>
       {/* Header close */}
 
       {/* Nav Bar start */}
