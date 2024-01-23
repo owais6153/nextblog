@@ -1,3 +1,4 @@
+import BlogCard from "@/components/BlogCard";
 import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import MediaHandles from "@/components/MediaHandles";
@@ -10,7 +11,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative pb-20">
       {/* <div className="w-full absolute -z-[1]">
         <Image
           width={1920}
@@ -45,7 +46,10 @@ export default function Home() {
           <div className="flex space-x-[14px] items-center">
             {navigationRoutes.map((nav) => {
               return (
-                <span className="text-[14px] font-semibold text-[#AAA] hover:text-black " key={uuidv4()}>
+                <span
+                  className="text-[14px] font-semibold text-[#AAA] hover:text-black "
+                  key={uuidv4()}
+                >
                   {nav?.title}
                 </span>
               );
@@ -57,8 +61,6 @@ export default function Home() {
         </MaxWidthWrapper>
       </nav>
       {/* Nav Bar close */}
-
-
 
       {/* Hero Section Layout start */}
       <div className="w-full py-4">
@@ -79,18 +81,67 @@ export default function Home() {
             <section className="bg-black-500 flex-1 h-full shrink-0 px-4">
               <Tabs defaultValue="LATEST" className="w-full">
                 <TabsList className="grid w-full grid-cols-2 gap-4 bg-transparent">
-                  <TabsTrigger value="LATEST" >LATEST</TabsTrigger>
+                  <TabsTrigger value="LATEST">LATEST</TabsTrigger>
                   <TabsTrigger value="GALLERIES">GALLERIES</TabsTrigger>
                 </TabsList>
-                <TabsContent value="LATEST"></TabsContent>
-                <TabsContent value="GALLERIES"></TabsContent>
+                <TabsContent className="grid space-y-5" value="LATEST">
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                  <BlogCard />
+                </TabsContent>
+                <TabsContent className="grid space-y-5" value="GALLERIES">
+                  <BlogCard />
+                  <BlogCard />
+                </TabsContent>
               </Tabs>
             </section>
           </div>
         </MaxWidthWrapper>
       </div>
-
       {/* Hero Section Layout close */}
+
+      {/* catalog */}
+
+      <section className="w-full">
+        <MaxWidthWrapper className={"mt-20"}>
+          <Divider title={"Football"} />
+          <div className="grid grid-cols-4 gap-6 mt-12">
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+          </div>
+        </MaxWidthWrapper>
+      </section>
+
+      <section className="w-full">
+        <MaxWidthWrapper className={"mt-20"}>
+          <Divider title={"Cricket"} />
+          <div className="grid grid-cols-4 gap-6 mt-12">
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+          </div>
+        </MaxWidthWrapper>
+      </section>
+
+      <section className="w-full">
+        <MaxWidthWrapper className={"mt-20"}>
+          <Divider title={"basket ball"} />
+          <div className="grid grid-cols-4 gap-6 mt-12">
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+          </div>
+        </MaxWidthWrapper>
+      </section>
     </main>
   );
 }

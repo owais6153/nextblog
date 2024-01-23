@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 
 const Divider = ({className, title, position,}) => {
   return (
-    <div className={cn("w-full relative bg-black h-[2px] flex justify-center", className, {
+    <div className={cn("w-full relative bg-black h-[1px] flex justify-center", className, {
         'justify-end': position === 'right',
         'justify-start': position === 'left',
     })}>
