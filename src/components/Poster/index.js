@@ -15,7 +15,7 @@ const Poster = ({ href, sport, duration, title, description, src }) => {
             className="object-cover"
           />
         </AspectRatio>
-        <div className="absolute w-full bottom-0 z-20 p-5">
+        <div className="absolute w-full bottom-0 z-20 p-5 bg-black-gradient">
           <div className="text-[12px]">
             <span className="text-green-300 font-medium">
               {sport || `Football`}
@@ -23,7 +23,7 @@ const Poster = ({ href, sport, duration, title, description, src }) => {
             {" / "}
             <span className="text-white">{duration || `6 month ago`}</span>
           </div>
-          <h2 className="text-3xl mt-1 font-semibold text-white">
+          <h2 className="text-3xl mt-1 font-bold text-white">
             {title ||
               `Rutgers football: Potential breakout players on offense this season`}
           </h2>
