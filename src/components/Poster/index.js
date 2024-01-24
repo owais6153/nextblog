@@ -23,7 +23,7 @@ const Poster = ({ href, sport, duration, title, description, src }) => {
             {" / "}
             <span className="text-white">{duration || `6 month ago`}</span>
           </div>
-          <h2 className="text-3xl mt-1 font-bold text-white">
+          <h2 className="text-xl mt-1 font-bold text-white">
             {title ||
               `Rutgers football: Potential breakout players on offense this season`}
           </h2>

@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
   return (
-    <main className="relative pb-20">
+    <main className="relative">
       {/* Header Start */}
       <header className="w-full h-[180px] bg-black flex items-center ">
         <MaxWidthWrapper className={"flex items-center flex-1"}>
@@ -26,14 +26,15 @@ export default function Home() {
       {/* Header close */}
 
       {/* Nav Bar start */}
-      <nav className="w-full bg-white h-[44px] border-b">
+      <nav className="w-full bg-white h-[44px] border-b hidden md:block">
         <MaxWidthWrapper
           className={"flex items-center justify-between flex-1 h-full"}
         >
           <div>
             <Icons.bar />
           </div>
-          <div className="flex space-x-[14px] items-center">
+
+          <div className="sm:flex space-x-[14px] items-center hidden">
             {navigationRoutes.map((nav) => {
               return (
                 <span
@@ -45,6 +46,7 @@ export default function Home() {
               );
             })}
           </div>
+
           <div>
             <Icons.search />
           </div>
@@ -55,20 +57,20 @@ export default function Home() {
       {/* Hero Section Layout start */}
       <div className="w-full py-4">
         <MaxWidthWrapper>
-          <div className="w-full h-auto  flex ">
+          <div className="w-full h-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
             {/* Trending section */}
-            <section className="bg-white  flex-1 h-full shrink-0 px-4">
+            <div className="bg-white w-full min-h-[200px] px-4">
               <Divider className={"mt-4"} title={"TRENDING"} />
-            </section>
+            </div>
 
             {/* Live or main section */}
-            <section className=" w-[41%] h-full shrink-0  border-x flex flex-col space-y-3">
+            <div className="h-full flex flex-col gap-4 order-last md:order-none mt-10 md:mt-0 ">
               <Poster />
               <Poster />
-            </section>
+            </div>
 
             {/* Latest section */}
-            <section className="bg-black-500 flex-1 h-full shrink-0 px-4">
+            <div className="bg-black-500 w-full h-full px-4   ">
               <Tabs defaultValue="LATEST" className="w-full">
                 <TabsList className="grid w-full grid-cols-2 gap-4 bg-transparent">
                   <TabsTrigger value="LATEST">LATEST</TabsTrigger>
@@ -89,7 +91,7 @@ export default function Home() {
                   <BlogCard />
                 </TabsContent>
               </Tabs>
-            </section>
+            </div>
           </div>
         </MaxWidthWrapper>
       </div>
@@ -108,6 +110,21 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
       </section>
+
+      {/* footer */}
+      <footer className="w-full min-h-[200px] bg-black mt-20">
+        <MaxWidthWrapper className={"flex items-center flex-col gap-9 py-12 "}>
+          <div>
+            <Icons.mainLogo />
+          </div>
+          <div className="">
+            <MediaHandles />
+          </div>
+        </MaxWidthWrapper>
+        <p className="w-full bg-gray-950 py-4 text-white text-center text-sm">
+          Copyright © 2023 The Scarlet Faithful. All Rights Reserved.
+        </p>
+      </footer>
     </main>
   );
 }
