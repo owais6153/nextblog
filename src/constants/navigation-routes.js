@@ -27,25 +27,5 @@ export const navigationRoutes = [
     title: "MORE SPORTSAD",
     href: "#",
     isDropdown: true,
-  },
-  {
-    title: "SHOP",
-    href: "#",
-    isDropdown: false,
-  },
-  {
-    title: "FORUM",
-    href: "#",
-    isDropdown: false,
-  },
-  {
-    title: "REGISTER",
-    href: "#",
-    isDropdown: false,
-  },
-  {
-    title: "LOGIN",
-    href: "#",
-    isDropdown: false,
-  },
+  }
 ];

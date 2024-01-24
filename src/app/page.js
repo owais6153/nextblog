@@ -12,16 +12,6 @@ import { v4 as uuidv4 } from "uuid";
 export default function Home() {
   return (
     <main className="relative pb-20">
-      {/* <div className="w-full absolute -z-[1]">
-        <Image
-          width={1920}
-          height={14687}
-          src="/images/themlayout.png"
-          alt="Image"
-          className="object-contain"
-        />
-      </div> */}
-
       {/* Header Start */}
       <header className="w-full h-[180px] bg-black flex items-center ">
         <MaxWidthWrapper className={"flex items-center flex-1"}>
@@ -110,31 +100,7 @@ export default function Home() {
       <section className="w-full">
         <MaxWidthWrapper className={"mt-20"}>
           <Divider title={"Football"} />
-          <div className="grid grid-cols-4 gap-6 mt-12">
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-          </div>
-        </MaxWidthWrapper>
-      </section>
-
-      <section className="w-full">
-        <MaxWidthWrapper className={"mt-20"}>
-          <Divider title={"Cricket"} />
-          <div className="grid grid-cols-4 gap-6 mt-12">
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-          </div>
-        </MaxWidthWrapper>
-      </section>
-
-      <section className="w-full">
-        <MaxWidthWrapper className={"mt-20"}>
-          <Divider title={"basket ball"} />
-          <div className="grid grid-cols-4 gap-6 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-6 mt-12">
             <BlogCard isVertical />
             <BlogCard isVertical />
             <BlogCard isVertical />
