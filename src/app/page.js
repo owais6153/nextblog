@@ -2,57 +2,16 @@ import BlogCard from "@/components/BlogCard";
 import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import MediaHandles from "@/components/MediaHandles";
+import DesktopNav from "@/components/Layout/Navbar/desktop-nav";
 import Poster from "@/components/Poster";
 import Divider from "@/components/ui/divider";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { navigationRoutes } from "@/constants/navigation-routes";
-import Image from "next/image";
-import { v4 as uuidv4 } from "uuid";
+import Header from "@/components/Layout/Header";
 
 export default function Home() {
   return (
     <main className="relative">
-      {/* Header Start */}
-      <header className="w-full h-[180px] bg-black flex items-center ">
-        <MaxWidthWrapper className={"flex items-center flex-1"}>
-          <div className="">
-            <MediaHandles />
-          </div>
-          <div className="ml-[27.5%]">
-            <Icons.mainLogo />
-          </div>
-        </MaxWidthWrapper>
-      </header>
-      {/* Header close */}
-
-      {/* Nav Bar start */}
-      <nav className="w-full bg-white h-[44px] border-b hidden md:block">
-        <MaxWidthWrapper
-          className={"flex items-center justify-between flex-1 h-full"}
-        >
-          <div>
-            <Icons.bar />
-          </div>
-
-          <div className="sm:flex space-x-[14px] items-center hidden">
-            {navigationRoutes.map((nav) => {
-              return (
-                <span
-                  className="text-[14px] font-semibold text-[#AAA] hover:text-black "
-                  key={uuidv4()}
-                >
-                  {nav?.title}
-                </span>
-              );
-            })}
-          </div>
-
-          <div>
-            <Icons.search />
-          </div>
-        </MaxWidthWrapper>
-      </nav>
-      {/* Nav Bar close */}
+      <Header />
 
       {/* Hero Section Layout start */}
       <div className="w-full py-4">
