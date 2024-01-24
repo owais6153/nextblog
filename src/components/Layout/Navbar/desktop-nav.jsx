@@ -3,6 +3,7 @@ import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
 import { Icons } from "../../Icons";
 import MaxWidthWrapper from "../../MaxWidthWrapper";
+import Drawer from "@/components/Drawer";
 
 const DesktopNav = () => {
   return (
@@ -11,7 +12,7 @@ const DesktopNav = () => {
         className={"flex items-center justify-between flex-1 h-full"}
       >
         <div>
-          <Icons.bar />
+          <Drawer />
         </div>
 
         <div className="sm:flex space-x-8 items-center hidden">
