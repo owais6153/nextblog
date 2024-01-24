@@ -29,7 +29,7 @@ export default function Home() {
             </div>
 
             {/* Latest section */}
-            <div className="bg-black-500 w-full h-full px-4   ">
+            <div className="bg-black-500 w-full h-full px-4  mt-5 md:mt-0  ">
               <Tabs defaultValue="LATEST" className="w-full">
                 <TabsList className="grid w-full grid-cols-2 gap-4 bg-transparent">
                   <TabsTrigger value="LATEST">LATEST</TabsTrigger>

@@ -28,6 +28,10 @@ const DesktopNav = () => {
           })}
         </div>
 
+        <div className="block sm:hidden">
+          <h2 className="tex-xl font-extrabold uppercase">The Fit Logo</h2>
+        </div>
+
         <div>
           <Icons.search />
         </div>
