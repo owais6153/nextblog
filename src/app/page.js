@@ -18,7 +18,15 @@ export default function Home() {
           <div className="w-full h-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
             {/* Trending section */}
             <div className="bg-white w-full min-h-[200px] px-4">
-              <Divider className={"mt-4"} title={"TRENDING"} />
+              <Divider className={"mt-4 mb-6"} title={"TRENDING"} />
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
             </div>
 
             {/* Live or main section */}
@@ -57,6 +65,39 @@ export default function Home() {
 
       {/* catalog */}
 
+      <section className="w-full">
+        <MaxWidthWrapper className={"mt-20"}>
+          <Divider title={"Football"} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-6 mt-12">
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+          </div>
+        </MaxWidthWrapper>
+      </section>
+      <section className="w-full">
+        <MaxWidthWrapper className={"mt-20"}>
+          <Divider title={"Football"} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-6 mt-12">
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+          </div>
+        </MaxWidthWrapper>
+      </section>
+      <section className="w-full">
+        <MaxWidthWrapper className={"mt-20"}>
+          <Divider title={"Football"} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-6 mt-12">
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+            <BlogCard isVertical />
+          </div>
+        </MaxWidthWrapper>
+      </section>
       <section className="w-full">
         <MaxWidthWrapper className={"mt-20"}>
           <Divider title={"Football"} />
