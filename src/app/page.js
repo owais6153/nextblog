@@ -1,12 +1,11 @@
 import BlogCard from "@/components/BlogCard";
 import { Icons } from "@/components/Icons";
+import Header from "@/components/Layout/Header";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import MediaHandles from "@/components/MediaHandles";
-import DesktopNav from "@/components/Layout/Navbar/desktop-nav";
 import Poster from "@/components/Poster";
 import Divider from "@/components/ui/divider";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Header from "@/components/Layout/Header";
 
 export default function Home() {
   return (

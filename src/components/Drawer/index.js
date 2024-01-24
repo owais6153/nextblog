@@ -1,15 +1,12 @@
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
+    Sheet,
+    SheetContent,
+    SheetTrigger
 } from "@/components/ui/sheet";
-import { Icons } from "../Icons";
 import { navigationRoutes } from "@/constants/navigation-routes";
-import { v4 as uuidv4 } from "uuid";
 import Link from "next/link";
+import { v4 as uuidv4 } from "uuid";
+import { Icons } from "../Icons";
 
 function Drawer() {
   return (
