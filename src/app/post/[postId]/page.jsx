@@ -54,6 +54,18 @@ const PostPage = () => {
             </AspectRatio>
           </div>
         </div>
+
+        <article className="w-full sm:max-w-[70%]">
+          <p className="leading-[16px] text-[12px] text-[#888] my-2">Jul 26, 2023; Indianapolis, IN, USA; Rutgers Scarlet Knights head coach Greg Schiano speaks to the media during the Big 10 football media day at Lucas Oil Stadium. Mandatory Credit: Robert Goddin-USA TODAY Sports</p>
+          
+          {/* icon will be show there */}
+          
+          <p className="text-[18px] font-medium mt-4">Rutgers football head coach Greg Schiano spoke about a number of topics during <span className="hover:border-b-4 cursor-pointer border-b-black hover:bg-red-600 font-semibold hover:text-white">his press conference</span> at Big Ten Media Days on Wednesday. Entering a critical fourth year in his second tenure at Rutgers, training camp is set to begin on August 3. Schiano wouldn’t directly answer what his expectations were for this season. However,  he did express his enthusiasm for where the program currently stands.</p>
+          <p className="text-[16px]  mt-4">Rutgers football head coach Greg Schiano spoke about a number of topics during <span className="hover:border-b-4 cursor-pointer border-b-black hover:bg-red-600 font-semibold hover:text-white">his press conference</span> at Big Ten Media Days on Wednesday. Entering a critical fourth year in his second tenure at Rutgers, training camp is set to begin on August 3. Schiano wouldn’t directly answer what his expectations were for this season. However,  he did express his enthusiasm for where the program currently stands.</p>
+          <p className="text-[16px]  mt-4">Rutgers football head coach Greg Schiano spoke about a number of topics during <span className="hover:border-b-4 cursor-pointer border-b-black hover:bg-red-600 font-semibold hover:text-white">his press conference</span> at Big Ten Media Days on Wednesday. Entering a critical fourth year in his second tenure at Rutgers, training camp is set to begin on August 3. Schiano wouldn’t directly answer what his expectations were for this season. However,  he did express his enthusiasm for where the program currently stands.</p>
+          <p className="text-[16px]  mt-4">Rutgers football head coach Greg Schiano spoke about a number of topics during <span className="hover:border-b-4 cursor-pointer border-b-black hover:bg-red-600 font-semibold hover:text-white">his press conference</span> at Big Ten Media Days on Wednesday. Entering a critical fourth year in his second tenure at Rutgers, training camp is set to begin on August 3. Schiano wouldn’t directly answer what his expectations were for this season. However,  he did express his enthusiasm for where the program currently stands.</p>
+        </article>
+
       </MaxWidthWrapper>
     </section>
   );
