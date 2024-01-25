@@ -19,7 +19,7 @@ const DesktopNav = () => {
           {navigationRoutes.map((nav) => {
             return (
               <Link
-                className="text-[14px] font-semibold text-[#AAA] hover:text-black "
+                className="text-[14px] font-semibold text-[#0b0a0a] hover:text-[#584646] "
                 key={uuidv4()}
                 href={nav.href}
               >

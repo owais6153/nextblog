@@ -3,7 +3,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import MediaHandles from "@/components/MediaHandles";
 import DesktopNav from "../Navbar/desktop-nav";
 
-const Header = () => {
+const HeaderApp = () => {
   return (
     <>
       <header className="w-full h-auto py-5 bg-black md:flex items-center hidden  ">
@@ -23,4 +23,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderApp;

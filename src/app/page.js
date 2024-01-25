@@ -1,17 +1,17 @@
 import BlogCard from "@/components/BlogCard";
 import { Icons } from "@/components/Icons";
+import LatestAndGalleries from "@/components/LatestAndGalleries";
 import Header from "@/components/Layout/Header";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import MediaHandles from "@/components/MediaHandles";
 import Poster from "@/components/Poster";
+import TrendingSection from "@/components/TrendingSection";
 import Divider from "@/components/ui/divider";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
   return (
     <main className="relative">
-      <Header />
-
       {/* Hero Section Layout start */}
       <div className="w-full py-4">
         <MaxWidthWrapper>
@@ -19,16 +19,7 @@ export default function Home() {
             {/* Trending section */}
             <div className="bg-white w-full min-h-[200px] px-4">
               <Divider className={"mt-4 mb-6"} title={"TRENDING"} />
-              <div className="px-4 grid space-y-5">
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-              </div>
+              <TrendingSection />
             </div>
 
             {/* Live or main section */}
@@ -39,26 +30,7 @@ export default function Home() {
 
             {/* Latest section */}
             <div className="bg-black-500 w-full h-full px-4  mt-5 md:mt-0  ">
-              <Tabs defaultValue="LATEST" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 gap-4 bg-transparent">
-                  <TabsTrigger value="LATEST">LATEST</TabsTrigger>
-                  <TabsTrigger value="GALLERIES">GALLERIES</TabsTrigger>
-                </TabsList>
-                <TabsContent className="grid space-y-5" value="LATEST">
-                  <BlogCard />
-                  <BlogCard />
-                  <BlogCard />
-                  <BlogCard />
-                  <BlogCard />
-                  <BlogCard />
-                  <BlogCard />
-                  <BlogCard />
-                </TabsContent>
-                <TabsContent className="grid space-y-5" value="GALLERIES">
-                  <BlogCard />
-                  <BlogCard />
-                </TabsContent>
-              </Tabs>
+              <LatestAndGalleries />
             </div>
           </div>
         </MaxWidthWrapper>
@@ -67,50 +39,18 @@ export default function Home() {
 
       {/* catalog */}
 
-      <section className="w-full">
-        <MaxWidthWrapper className={"mt-20"}>
-          <Divider title={"Football"} />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-6 mt-12">
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-          </div>
-        </MaxWidthWrapper>
-      </section>
-      <section className="w-full">
-        <MaxWidthWrapper className={"mt-20"}>
-          <Divider title={"Football"} />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-6 mt-12">
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-          </div>
-        </MaxWidthWrapper>
-      </section>
-      <section className="w-full">
-        <MaxWidthWrapper className={"mt-20"}>
-          <Divider title={"Football"} />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-6 mt-12">
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-          </div>
-        </MaxWidthWrapper>
-      </section>
-      <section className="w-full">
-        <MaxWidthWrapper className={"mt-20"}>
-          <Divider title={"Football"} />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-6 mt-12">
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-            <BlogCard isVertical />
-          </div>
-        </MaxWidthWrapper>
-      </section>
+      {Array.from({ length: 3 }, (_, index) => (
+        <section key={index + 1} className="w-full">
+          <MaxWidthWrapper className={"mt-20"}>
+            <Divider title={"Football"} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-6 mt-12">
+              {Array.from({ length: 4 }, (_, index) => (
+                <BlogCard isVertical key={`BlogCard + ${index + 1}`} />
+              ))}
+            </div>
+          </MaxWidthWrapper>
+        </section>
+      ))}
 
       {/* More new */}
       <section>
@@ -134,21 +74,6 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
       </section>
-
-      {/* footer */}
-      <footer className="w-full min-h-[200px] bg-black mt-20">
-        <MaxWidthWrapper className={"flex items-center flex-col gap-9 py-12 "}>
-          <div>
-            <Icons.mainLogo />
-          </div>
-          <div className="">
-            <MediaHandles />
-          </div>
-        </MaxWidthWrapper>
-        <p className="w-full bg-gray-950 py-4 text-white text-center text-sm">
-          Copyright © 2023 The Scarlet Faithful. All Rights Reserved.
-        </p>
-      </footer>
     </main>
   );
 }
