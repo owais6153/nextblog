@@ -2,7 +2,14 @@ import Image from "next/image";
 import { AspectRatio } from "../ui/aspect-ratio";
 import Link from "next/link";
 
-const Poster = ({ href, sport, duration, title, description, src }) => {
+const Poster = ({
+  href = "/post/1",
+  sport,
+  duration,
+  title,
+  description,
+  src,
+}) => {
   return (
     <Link href={href || "#"}>
       <div className="w-full h-auto relative">

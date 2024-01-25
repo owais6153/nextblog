@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const BlogCard = ({
-  href,
+  href = '/post/1',
   sport,
   duration,
   title,
