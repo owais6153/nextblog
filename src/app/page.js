@@ -19,14 +19,16 @@ export default function Home() {
             {/* Trending section */}
             <div className="bg-white w-full min-h-[200px] px-4">
               <Divider className={"mt-4 mb-6"} title={"TRENDING"} />
-              <BlogCard />
-              <BlogCard />
-              <BlogCard />
-              <BlogCard />
-              <BlogCard />
-              <BlogCard />
-              <BlogCard />
-              <BlogCard />
+              <div className="px-4 grid space-y-5">
+                <BlogCard />
+                <BlogCard />
+                <BlogCard />
+                <BlogCard />
+                <BlogCard />
+                <BlogCard />
+                <BlogCard />
+                <BlogCard />
+              </div>
             </div>
 
             {/* Live or main section */}
@@ -106,6 +108,29 @@ export default function Home() {
             <BlogCard isVertical />
             <BlogCard isVertical />
             <BlogCard isVertical />
+          </div>
+        </MaxWidthWrapper>
+      </section>
+
+      {/* More new */}
+      <section>
+        <MaxWidthWrapper className={"mt-20"}>
+          <Divider title={"MORE NEWS"} />
+          <div className="grid grid-cols-12 gap-5 mt-10">
+            <div className=" col-span-12 sm:col-span-9">
+              <div className="border-y py-2  w-full  sm:max-w-[90%] h-auto">
+                <BlogCard
+                  description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar, neque ut interdum molestie, mauris mauris tincidunt tellus, vel posuere dui leo non massa. Integer pharetra eleifend faucibus. Sed in orci rutrum, ultrices Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar, neque ut interdum molestie, mauris mauris tincidunt tellus, vel posuere dui leo non massa. Integer pharetra eleifend faucibus. Sed in orci rutrum, ultrices`}
+                  titleClasses="!leading-[32px] text-[24px] sm:!leading-[38px]  sm:text-[32px]"
+                  imageContainerClasses="w-full sm:w-[300px] h-auto"
+                  containerClasses="flex-col sm:flex-row "
+                />
+              </div>
+            </div>
+
+            <div className=" col-span-12 sm:col-span-3">
+              <Divider title={"TWEETS"} />
+            </div>
           </div>
         </MaxWidthWrapper>
       </section>
