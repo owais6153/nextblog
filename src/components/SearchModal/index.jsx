@@ -8,7 +8,7 @@ const SearchModal = ({ isVisible, onClose }) => {
   return (
     <>
       <div
-        className={`transition-all h-screen w-full bg-black ${
+        className={`transition-all h-screen w-full bg-black px-4 ${
           isVisible ? "z-[1000]" : "-z-[1]"
         } fixed duration-500 ease-in-out ${
           isVisible ? "opacity-100" : "opacity-0 -translate-y-4"
@@ -17,20 +17,19 @@ const SearchModal = ({ isVisible, onClose }) => {
         <span onClick={onClose} className="absolute right-8 top-8">
           <XCircle size={32} color="#fff" className="cursor-pointer" />
         </span>
+        <div className="flex h-full w-full max-w-5xl justify-between mx-auto px-4 relative items-center">
         <Input
-          className="m-auto after:content-['_↗']  bg-transparent text-white absolute w-full max-w-[50%] top-[40%] left-[25%] placeholder:text-slate-400 h-[48px] bg-none text-[16px]"
+          className="  bg-transparent text-white  flex h-[48px] bg-none text-[18px]"
           placeholder="Search"
         />
-        <div
-          className="max-w-[50%] flex top-[40%] left-[25%] absolute w-full"
-          variant={"outline"}
-        >
+  
           <SearchIcon
             onClick={onClose}
             color="#fff"
-            className=" absolute cursor-pointer right-5 top-2 rounded-sm  bg-black "
+            className=" absolute cursor-pointer right-6  mt-[2px]  rounded-sm  bg-black "
             size={32}
           />
+       
         </div>
       </div>
     </>
