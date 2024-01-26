@@ -27,5 +27,9 @@ export const navigationRoutes = [
     title: "MORE SPORTSAD",
     href: "#",
     isDropdown: true,
+  },
+  {
+    title: "About",
+    href: "/about",
   }
 ];
