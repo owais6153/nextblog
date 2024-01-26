@@ -31,8 +31,8 @@ export const Icons = {
       <Image alt="main-logo" fill src={"/images/bar.svg"} />
     </div>
   ),
-  search: (props) => (
-    <div className="relative w-[24px] h-[24px]">
+  search: ({onOpenSearch}) => (
+    <div onClick={onOpenSearch} className="relative w-[24px] h-[24px]">
       <Image alt="main-logo" fill src={"/images/search.svg"} />
     </div>
   ),

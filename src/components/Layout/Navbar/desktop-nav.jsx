@@ -4,8 +4,9 @@ import { v4 as uuidv4 } from "uuid";
 import { Icons } from "../../Icons";
 import MaxWidthWrapper from "../../MaxWidthWrapper";
 import Drawer from "@/components/Drawer";
+import SearchModal from "@/components/SearchModal";
 
-const DesktopNav = () => {
+const DesktopNav = ({onOpenSearch}) => {
   return (
     <nav className="w-full bg-white h-[48px] border-b  ">
       <MaxWidthWrapper
@@ -33,8 +34,8 @@ const DesktopNav = () => {
           <h2 className="tex-xl font-extrabold uppercase">The Fit Logo</h2>
         </div>
 
-        <div>
-          <Icons.search />
+        <div className="cursor-pointer" >
+          <Icons.search onOpenSearch={ onOpenSearch}  />
         </div>
       </MaxWidthWrapper>
     </nav>
