@@ -39,7 +39,7 @@ export default function Home() {
 
       {/* catalog */}
 
-      {Array.from({ length: 3 }, (_, index) => (
+      {Array.from({ length: 2 }, (_, index) => (
         <section key={index + 1} className="w-full">
           <MaxWidthWrapper className={"mt-20"}>
             <Divider title={"Football"} />
@@ -59,17 +59,30 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-5 mt-10">
             <div className=" col-span-12 sm:col-span-9">
               <div className="border-y py-2  w-full  sm:max-w-[90%] h-auto">
-                <BlogCard
-                  description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar, neque ut interdum molestie, mauris mauris tincidunt tellus, vel posuere dui leo non massa. Integer pharetra eleifend faucibus. Sed in orci rutrum, ultrices Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar, neque ut interdum molestie, mauris mauris tincidunt tellus, vel posuere dui leo non massa. Integer pharetra eleifend faucibus. Sed in orci rutrum, ultrices`}
-                  titleClasses="!leading-[32px] text-[24px] sm:!leading-[38px]  sm:text-[32px]"
-                  imageContainerClasses="w-full sm:w-[300px] h-auto"
-                  containerClasses="flex-col sm:flex-row "
-                />
+                {Array.from({ length: 20 }, (_, index) => (
+                  <>
+                    {index % 5 === 0 ? (
+                      <div className="mt-12" key={`BlogCard + ${index + 1}`}>
+                        <BlogCard isVertical />
+                      </div>
+                    ) : (
+                      <BlogCard
+                        description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar, neque ut interdum molestie, mauris mauris tincidunt tellus, vel posuere dui leo non massa. Integer pharetra eleifend faucibus. Sed in orci rutrum, ultrices Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar, neque ut interdum molestie, mauris mauris tincidunt tellus, vel posuere dui leo non massa. Integer pharetra eleifend faucibus. Sed in orci rutrum, ultrices`}
+                        titleClasses="!leading-[32px] text-[24px] sm:!leading-[38px]  sm:text-[32px]"
+                        imageContainerClasses="w-full sm:w-[300px] h-auto"
+                        containerClasses="flex-col sm:flex-row mt-12 "
+                      />
+                    )}
+                  </>
+                ))}
               </div>
             </div>
 
             <div className=" col-span-12 sm:col-span-3">
-              <Divider title={"TWEETS"} />
+              <Divider title={"TWEETS"} />{" "}
+              <div className="mt-12">
+                <TrendingSection />
+              </div>
             </div>
           </div>
         </MaxWidthWrapper>

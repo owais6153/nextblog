@@ -6,7 +6,7 @@ import MaxWidthWrapper from "../../MaxWidthWrapper";
 import Drawer from "@/components/Drawer";
 import SearchModal from "@/components/SearchModal";
 
-const DesktopNav = ({onOpenSearch}) => {
+const DesktopNav = ({ onOpenSearch }) => {
   return (
     <nav className="w-full bg-white h-[48px] border-b  ">
       <MaxWidthWrapper
@@ -31,11 +31,11 @@ const DesktopNav = ({onOpenSearch}) => {
         </div>
 
         <div className="block sm:hidden">
-          <h2 className="tex-xl font-extrabold uppercase">The Fit Logo</h2>
+          <h2 className="tex-xl font-extrabold uppercase">GLOBAL NEWS</h2>
         </div>
 
-        <div className="cursor-pointer" >
-          <Icons.search onOpenSearch={ onOpenSearch}  />
+        <div className="cursor-pointer">
+          <Icons.search onOpenSearch={onOpenSearch} />
         </div>
       </MaxWidthWrapper>
     </nav>

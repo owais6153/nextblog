@@ -4,32 +4,15 @@ export const navigationRoutes = [
     href: "/",
   },
   {
-    title: "FOOTBALL",
-    href: "#",
-    isDropdown: true,
-  },
-  {
-    title: "BASKETBALL",
-    href: "#",
-    isDropdown: true,
-  },
-  {
-    title: "PODCAST",
-    href: "#",
-    isDropdown: true,
-  },
-  {
-    title: " PRO KNIGHTS",
-    href: "#",
-    isDropdown: true,
-  },
-  {
-    title: "MORE SPORTSAD",
-    href: "#",
-    isDropdown: true,
-  },
-  {
-    title: "About",
+    title: "ABOUT",
     href: "/about",
-  }
+  },
+  {
+    title: "ARCHIVE/CATEGORY",
+    href: "/archive",
+  },
+  {
+    title: "POST INNER",
+    href: "/post/1",
+  },
 ];

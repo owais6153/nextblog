@@ -18,7 +18,7 @@ const Poster = ({
           <Image
             alt="poster"
             fill
-            src={src || "/images/poster-img1.jpeg"}
+            src={src || "/images/gaetano-cessati-ssguzho__K8-unsplash.jpg"}
             className="object-cover"
           />
         </AspectRatio>
@@ -32,11 +32,11 @@ const Poster = ({
           </div>
           <h2 className="text-xl mt-1 font-bold text-white">
             {title ||
-              `Rutgers football: Potential breakout players on offense this season`}
+              `Nam aliquam ultrices arcu id posuere, et hendrerit dolor.`}
           </h2>
           <p className="text-sm text-white mt-2">
             {description ||
-              `Training camp for Rutgers football begins on Thursday, August 3. While it’s clear who the most indispensable players are heading...`}{" "}
+              `Donec dictum iaculis tristique. Curabitur sed risus vestibulum, sodales est et, elementum sem. Quisque pulvinar....`}
           </p>
         </div>
       </div>

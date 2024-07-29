@@ -5,14 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const BlogCard = ({
-  href = '/post/1',
+  href = "/post/1",
   sport,
   duration,
   title,
   src,
   isVertical = false,
   imageContainerClasses = "",
-  titleClasses = '',
+  titleClasses = "",
   description,
   containerClasses,
 }) => {
@@ -25,7 +25,7 @@ const BlogCard = ({
               <Image
                 alt="poster"
                 fill
-                src={src || "/images/card-v.jpeg"}
+                src={src || "/images/chino-rocha-uEtFGfx0m4Q-unsplash.jpg"}
                 className="object-cover object-center"
               />
             </AspectRatio>
@@ -42,7 +42,7 @@ const BlogCard = ({
             </div>
             <h2 className="text-[19px] mt-[5px] leading-[23px] font-bold text-black">
               {title ||
-                `Can Rutgers take advantage of enough breaks that come their way this season?`}
+                `Nam aliquam ultrices arcu id posuere, et hendrerit dolor.`}
             </h2>
           </div>
         </div>
@@ -58,7 +58,7 @@ const BlogCard = ({
             <Image
               alt="poster"
               fill
-              src={src || "/images/poster-img1.jpeg"}
+              src={src || "/images/steele-rutherford-P4tbpnpz61Y-unsplash.jpg"}
               className="object-cover"
             />
           </AspectRatio>
@@ -74,14 +74,19 @@ const BlogCard = ({
               {duration || `6 month ago`}
             </span>
           </div>
-          <h2 className={cn("text-[14px] mt-[5px] leading-[18px] font-bold text-black", titleClasses)}>
+          <h2
+            className={cn(
+              "text-[14px] mt-[5px] leading-[18px] font-bold text-black",
+              titleClasses
+            )}
+          >
             {title ||
-              `Can Rutgers take advantage of enough breaks that come their way this season?`}
+              `Nam aliquam ultrices arcu id posuere, et hendrerit dolor.`}
           </h2>
           {description && (
-            <p className="text-[18px] text-[#5555] mt-2 h-[170px] overflow-hidden">
+            <p className="text-[18px] text-[#999] mt-2 h-[170px] overflow-hidden">
               {description ||
-                `Training camp for Rutgers football begins on Thursday, August 3. While it’s clear who the most indispensable players are heading...`}{" "}
+                `Donec dictum iaculis tristique. Curabitur sed risus vestibulum, sodales est et, elementum sem. Quisque pulvinar....`}
             </p>
           )}
         </div>

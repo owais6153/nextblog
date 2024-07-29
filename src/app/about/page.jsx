@@ -8,17 +8,17 @@ const AboutPage = () => {
               About Us
             </h1>
             <p className="font-normal text-base leading-6 text-gray-600 ">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum.In the first place we have granted to
-              God, and by this our present charter confirmed for us and our
-              heirs forever that the English Church shall be free, and shall
-              have her rights entire, and her liberties inviolate; and we will
-              that it be thus observed; which is apparent from God, and by this
-              our present charter confirmed for us and our heirs forever that
-              the English Church shall be free, and shall have her rights
-              entire, and her liberties inviolate; and we will that it be thus
-              observed; which is apparent from
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+              vero repudiandae et minus. Repudiandae at culpa assumenda eaque
+              aliquid facilis consequatur odit ipsum officiis illum! Deserunt
+              qui magnam libero fugit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quaerat temporibus minus repudiandae libero ut
+              consequuntur quo pariatur fuga alias, perferendis similique? Quia
+              rerum quasi hic libero soluta voluptatem voluptates ipsa?
+              <br />
+              <br /> Quaerat temporibus minus repudiandae libero ut consequuntur
+              quo pariatur fuga alias, perferendis similique? Quia rerum quasi
+              hic libero soluta voluptatem voluptates ipsa?
             </p>
           </div>
           <div className="w-full lg:w-8/12 ">
@@ -36,20 +36,17 @@ const AboutPage = () => {
               Our Story
             </h1>
             <p className="font-normal text-base leading-6 text-gray-600 ">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum.In the first place we have granted to
-              God, and by this our present charter confirmed for us and our
-              heirs forever that the English Church shall be free, and shall
-              have her rights entire, and her liberties inviolate; and we will
-              that it be thus observed; which is apparent from It is a long
-              established fact that a reader will be distracted by the readable
-              content of a page when looking at its layout. The point of using
-              Lorem Ipsum.In the first place we have granted to God, and by this
-              our present charter confirmed for us and our heirs forever that
-              the English Church shall be free, and shall have her rights
-              entire, and her liberties inviolate; and we will that it be thus
-              observed; which is apparent from
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+              vero repudiandae et minus. Repudiandae at culpa assumenda eaque
+              aliquid facilis consequatur odit ipsum officiis illum! Deserunt
+              qui magnam libero fugit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quaerat temporibus minus repudiandae libero ut
+              consequuntur quo pariatur fuga alias, perferendis similique? Quia
+              rerum quasi hic libero soluta voluptatem voluptates ipsa?
+              <br />
+              <br /> Quaerat temporibus minus repudiandae libero ut consequuntur
+              quo pariatur fuga alias, perferendis similique? Quia rerum quasi
+              hic libero soluta voluptatem voluptates ipsa?
             </p>
           </div>
 
@@ -59,13 +56,17 @@ const AboutPage = () => {
                 Our Teams
               </h1>
               <p className="font-normal text-base leading-6 text-gray-600 text-center ">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum.In the first place we have
-                granted to God, and by this our present charter confirmed for us
-                and our heirs forever that the English Church shall be free, and
-                shall have her rights entire, and her liberties inviolate; and
-                we will that it be thus observed; which is apparent from
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                vero repudiandae et minus. Repudiandae at culpa assumenda eaque
+                aliquid facilis consequatur odit ipsum officiis illum! Deserunt
+                qui magnam libero fugit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quaerat temporibus minus repudiandae libero ut
+                consequuntur quo pariatur fuga alias, perferendis similique?
+                Quia rerum quasi hic libero soluta voluptatem voluptates ipsa?
+                <br />
+                <br /> Quaerat temporibus minus repudiandae libero ut
+                consequuntur quo pariatur fuga alias, perferendis similique?
+                Quia rerum quasi hic libero soluta voluptatem voluptates ipsa?
               </p>
             </div>
             <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md mt-5">
