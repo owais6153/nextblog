@@ -79,7 +79,7 @@ export default function Home() {
             </div>
 
             <div className=" col-span-12 sm:col-span-3">
-              <Divider title={"TWEETS"} />{" "}
+              <Divider title={"TRENDS"} />{" "}
               <div className="mt-12">
                 <TrendingSection />
               </div>

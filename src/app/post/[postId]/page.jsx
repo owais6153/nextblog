@@ -33,7 +33,7 @@ const PostPage = () => {
                   <span className="text-[14px] text-[#a49898]">By</span>
                   <span className="text-[14px] text-[#000] flex items-center gap-2">
                     {" "}
-                    Aaron Breitman <Link2Icon />{" "}
+                    Aiman Breitman <Link2Icon />{" "}
                   </span>
                 </div>
               </div>
@@ -54,61 +54,49 @@ const PostPage = () => {
 
         <article className="w-full sm:max-w-[70%]">
           <p className="leading-[16px] text-[12px] text-[#888] my-2">
-            Jul 26, 2023; Indianapolis, IN, USA; Rutgers Scarlet Knights head
-            coach Greg Schiano speaks to the media during the Big 10 football
-            media day at Lucas Oil Stadium. Mandatory Credit: Robert Goddin-USA
-            TODAY Sports
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            incidunt similique rem, dolorem corporis aspernatur quo quaerat
+            illum possimus sint. Beatae rem assumenda incidunt laudantium
+            blanditiis, sunt eius debitis temporibus?
           </p>
 
           {/* icon will be show there */}
 
           <p className="text-[18px] font-medium mt-4">
-            Rutgers football head coach Greg Schiano spoke about a number of
-            topics during{" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit{" "}
             <span className="hover:border-b-4 cursor-pointer border-b-black hover:bg-red-600 font-semibold hover:text-white">
-              his press conference
+              magnam impedit nesciunt
             </span>{" "}
-            at Big Ten Media Days on Wednesday. Entering a critical fourth year
-            in his second tenure at Rutgers, training camp is set to begin on
-            August 3. Schiano wouldn’t directly answer what his expectations
-            were for this season. However, he did express his enthusiasm for
-            where the program currently stands.
+            odio sit minima dolorem id autem ut fugiat animi quo, iste excepturi
+            provident molestiae a, blanditiis officiis? Quasi, autem.
           </p>
           <p className="text-[16px]  mt-4">
-            Rutgers football head coach Greg Schiano spoke about a number of
-            topics during{" "}
-            <span className="hover:border-b-4 cursor-pointer border-b-black hover:bg-red-600 font-semibold hover:text-white">
-              his press conference
-            </span>{" "}
-            at Big Ten Media Days on Wednesday. Entering a critical fourth year
-            in his second tenure at Rutgers, training camp is set to begin on
-            August 3. Schiano wouldn’t directly answer what his expectations
-            were for this season. However, he did express his enthusiasm for
-            where the program currently stands.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+            culpa consectetur explicabo. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Fuga nemo delectus saepe beatae, possimus
+            inventore ipsam, nostrum eum corrupti minus iste voluptatem odio
+            harum laboriosam neque nisi! Soluta, ducimus doloremque?
           </p>
           <p className="text-[16px]  mt-4">
-            Rutgers football head coach Greg Schiano spoke about a number of
-            topics during{" "}
-            <span className="hover:border-b-4 cursor-pointer border-b-black hover:bg-red-600 font-semibold hover:text-white">
-              his press conference
-            </span>{" "}
-            at Big Ten Media Days on Wednesday. Entering a critical fourth year
-            in his second tenure at Rutgers, training camp is set to begin on
-            August 3. Schiano wouldn’t directly answer what his expectations
-            were for this season. However, he did express his enthusiasm for
-            where the program currently stands.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+            culpa consectetur explicabo. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Fuga nemo delectus saepe beatae, possimus
+            inventore ipsam, nostrum eum corrupti minus iste voluptatem odio
+            harum laboriosam neque nisi! Soluta, ducimus doloremque?
           </p>
           <p className="text-[16px]  mt-4">
-            Rutgers football head coach Greg Schiano spoke about a number of
-            topics during{" "}
-            <span className="hover:border-b-4 cursor-pointer border-b-black hover:bg-red-600 font-semibold hover:text-white">
-              his press conference
-            </span>{" "}
-            at Big Ten Media Days on Wednesday. Entering a critical fourth year
-            in his second tenure at Rutgers, training camp is set to begin on
-            August 3. Schiano wouldn’t directly answer what his expectations
-            were for this season. However, he did express his enthusiasm for
-            where the program currently stands.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+            culpa consectetur explicabo. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Fuga nemo delectus saepe beatae, possimus
+            inventore ipsam, nostrum eum corrupti minus iste voluptatem odio
+            harum laboriosam neque nisi! Soluta, ducimus doloremque?
+          </p>
+          <p className="text-[16px]  mt-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+            culpa consectetur explicabo. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Fuga nemo delectus saepe beatae, possimus
+            inventore ipsam, nostrum eum corrupti minus iste voluptatem odio
+            harum laboriosam neque nisi! Soluta, ducimus doloremque?
           </p>
         </article>
       </MaxWidthWrapper>
